@@ -1,10 +1,13 @@
+//import { dark } from '@mui/material/styles/createPalette'
 import React from 'react'
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ onClick, darkTheme }) => {
   // TODO: Implement dark mode toggle logic
 
   return (
-    <button>Toggle Dark Mode {/* TODO: Update this text from Dark to Light dynamically */}</button>
+        <button onClick={onClick}>
+          {darkTheme ? "Toggle Dark Mode" : "Toggle Light Mode"}
+        </button>
   )
 }
 
